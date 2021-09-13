@@ -1,3 +1,7 @@
+import { Route } from "react-router";
+import { PostProvider } from "./posts/PostProvider";
+import { PostList } from "./posts/PostList";
+
 export const ApplicationViews = () => {
     return (
         <>
@@ -7,7 +11,11 @@ export const ApplicationViews = () => {
           lineHeight: "1.75rem",
         }}
       ></main>
-      Hello World
+      <PostProvider>
+        <Route exact path="/">
+          <PostList />
+        </Route>
+      </PostProvider>
       </>
     );
 };

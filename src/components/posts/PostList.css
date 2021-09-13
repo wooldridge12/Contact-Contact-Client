@@ -1,0 +1,8 @@
+.post {
+    margin-top: 2rem;
+    border: black solid;
+    padding: 1rem;
+}
+.post__contact_user {
+    font-weight: bold;
+}

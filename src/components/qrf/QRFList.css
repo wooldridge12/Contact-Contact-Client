@@ -1,0 +1,20 @@
+.qrfpost {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+    border: black solid;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 75%;
+}
+.qrfpost__contact_user {
+    font-weight: bold;
+}
+.help_button {
+    margin-left: 90%;
+    height: 3rem;
+    width: 3rem;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 8px;
+}

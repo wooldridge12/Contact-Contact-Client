@@ -14,13 +14,13 @@ export const NavBar = () => {
         </Link>
       </li>
       <li className="navbar__item">
-        <Link className="navbar__link" to="/">
-          Nothing
+        <Link className="navbar__link" to="/QRF">
+          QRF
         </Link>
       </li>
       <li className="navbar__item">
         <Link className="navbar__link" to="/">
-          Nothing
+          Messages
         </Link>
       </li>
       {localStorage.getItem("contact_user_id") !== null ? (

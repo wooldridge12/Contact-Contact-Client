@@ -1,6 +1,6 @@
-import react, { useState, createContext } from "react"
+import React, { useState, createContext } from "react"
 
-export const PostContext = createContext();
+export const PostContext = React.createContext();
 
 export const PostProvider = (props) => {
     const [posts, setPosts] = useState([]);
@@ -16,11 +16,25 @@ export const PostProvider = (props) => {
         .then(setPosts);
     }
 
+    const createPosts = (post) => {
+        return fetch("http://localhost:8000/posts", { 
+            method: "POST",
+            headers:{
+                "Authorization": `Token ${localStorage.getItem("contact_user_id")}`,
+                "Content-type": "application/json"
+        },
+        body: JSON.stringify(post)
+    })
+        .then(response => response.json())
+        .then(getPosts)
+    }
+
     return (
         <PostContext.Provider
           value={{
               posts,
-              getPosts
+              getPosts,
+              createPosts
           }}
           >
               {props.children}

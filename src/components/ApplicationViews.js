@@ -34,6 +34,7 @@ export const ApplicationViews = () => {
         </Route>
 
         <Route exact path="/messages">
+        <><div className="title">MESSAGES</div></>
           <MessageList />
         </Route>
 

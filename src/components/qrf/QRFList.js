@@ -5,7 +5,7 @@ import "./QRFList.css"
 
 export const QRFList = () => {
     // const history = useHistory()
-    const { qrfposts, getQRFPosts, } = useContext(QRFContext);
+    const { qrfposts, getQRFPosts } = useContext(QRFContext);
 
     useEffect(() => {
         getQRFPosts();
@@ -13,9 +13,7 @@ export const QRFList = () => {
 
     return (
         <article className="qrfposts">
-            <header className="qrfpost-header">
-
-                {/* Add create button here */}
+            <header className="qrfposts-header">
 
             </header>
 

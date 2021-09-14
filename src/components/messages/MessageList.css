@@ -1,0 +1,18 @@
+.message__contact_user {
+    font-weight: bold;
+}
+.message__battle_buddy {
+    font-weight: bold;
+}
+.msg {
+    margin: 10px
+}
+.message {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+    border: black solid;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 75%;
+}

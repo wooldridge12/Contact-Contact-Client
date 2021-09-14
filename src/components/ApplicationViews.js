@@ -4,6 +4,8 @@ import { PostList } from "./posts/PostList";
 import { PostForm } from "./posts/PostForm";
 import { QRFContext, QRFProvider } from "./qrf/QRFProvider";
 import { QRFList } from "./qrf/QRFList";
+import { MessageProvider } from "./messages/MessageProvider";
+import { MessageList } from "./messages/MessageList";
 
 export const ApplicationViews = () => {
     return (
@@ -16,6 +18,7 @@ export const ApplicationViews = () => {
       ></main>
       <PostProvider>
       <QRFProvider>
+      <MessageProvider>
 
         <Route exact path="/">
           <><div className="title">Contact-Contact</div></>
@@ -30,6 +33,11 @@ export const ApplicationViews = () => {
           <QRFList />
         </Route>
 
+        <Route exact path="/messages">
+          <MessageList />
+        </Route>
+
+      </MessageProvider>
       </QRFProvider>
       </PostProvider>
       </>

@@ -1,8 +1,10 @@
 import React, { useContext, useEffect } from "react";
+import { useHistory } from "react-router-dom"
 import { PostContext } from "./PostProvider";
 import "./PostList.css"
 
 export const PostList = () => {
+  const history = useHistory()
   const { posts, getPosts, } = useContext(PostContext);
 
   useEffect(() => {
@@ -12,9 +14,13 @@ export const PostList = () => {
   return (
     <article className="posts">
         <header className="posts-header">
-            <div className="title">Contact-Contact</div>
 
         {/* Add a create post button here */}
+        <button className="btn btn-2 btn-sep icon-create"
+                onClick={() => {
+                    history.push({ pathname: "/posts/new" })
+                }}
+                >Create Post</button>
 
         </header>
 

@@ -1,7 +1,10 @@
 .post {
     margin-top: 2rem;
+    margin-left: 0.5rem;
     border: black solid;
+    border-radius: 6px;
     padding: 1rem;
+    width: 75%;
 }
 .post__contact_user {
     font-weight: bold;

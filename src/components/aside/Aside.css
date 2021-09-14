@@ -1,0 +1,11 @@
+
+.menu {
+    border: 6px black solid;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 24%;
+    margin-top: 10%;
+    position: fixed;
+    right: 0%;
+    background-color: aliceblue;
+} 

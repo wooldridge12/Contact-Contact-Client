@@ -12,7 +12,7 @@ export const PostList = () => {
   return (
     <article className="posts">
         <header className="posts-header">
-            <h1>Contact-Contact</h1>
+            <div className="title">Contact-Contact</div>
 
         {/* Add a create post button here */}
 

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom";
 import { PostContext } from "./PostProvider";
 import "./PostList.css"
 
@@ -15,7 +15,6 @@ export const PostList = () => {
     <article className="posts">
         <header className="posts-header">
 
-        {/* Add a create post button here */}
         <button className="btn btn-2 btn-sep icon-create"
                 onClick={() => {
                     history.push({ pathname: "/posts/new" })

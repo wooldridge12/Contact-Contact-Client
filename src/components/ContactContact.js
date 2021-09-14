@@ -4,6 +4,7 @@ import { ApplicationViews } from "./ApplicationViews";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 import { NavBar } from "./nav/NavBar";
+import { Aside } from "./aside/Aside";
 
 export const ContactContact = () => (
     <>
@@ -13,6 +14,7 @@ export const ContactContact = () => (
             return (
               <>
                 <NavBar />
+                <Aside />
                 <ApplicationViews />
               </>
             );

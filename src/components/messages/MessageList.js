@@ -18,7 +18,7 @@ export const MessageList = () => {
 
             {
                 messages.map(message => {
-                    return <section key={`messages--${message.id}`} className="message">
+                    return <section key={`messages--${message.id}`} className="contact_message">
                         <div className="message__contact_user msg">From: {message.contact_user.user.first_name}</div>
                         <div className="message__help_section_post msg">{message.help_section_post.content}</div>
                         <div className="message__battle_buddy msg">To: {message.battle_buddy.contact_user.username}</div>

@@ -7,6 +7,7 @@ import { QRFList } from "./qrf/QRFList";
 import { MessageProvider } from "./messages/MessageProvider";
 import { MessageList } from "./messages/MessageList";
 import { HelpForm } from "./qrf/HelpForm";
+import { MessageForm } from "./messages/MessageForm";
 
 export const ApplicationViews = () => {
     return (
@@ -37,6 +38,9 @@ export const ApplicationViews = () => {
         <Route exact path="/messages">
         <><div className="title">MESSAGES</div></>
           <MessageList />
+        </Route>
+        <Route exact path="/messages/new">
+          <MessageForm />
         </Route>
 
         <Route exact path="/help">

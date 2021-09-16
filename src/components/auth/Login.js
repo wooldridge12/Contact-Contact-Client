@@ -26,6 +26,7 @@ export const Login = () => {
       .then((res) => {
         if ("valid" in res && res.valid) {
           localStorage.setItem("contact_user_id", res.token);
+          localStorage.setItem("active", res.active);
           history.push("/");
         } else {
           invalidDialog.current.showModal();

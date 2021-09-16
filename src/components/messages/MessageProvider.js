@@ -29,12 +29,23 @@ export const MessageProvider = (props) => {
         .then(getMessages)
     }
 
+    const getMyMessages = (userId) => {
+        return fetch(`http://localhost:8000/messages?user=${userId}`, {
+          headers: {
+            "Authorization": `Token ${localStorage.getItem("contact_user_id")}`
+        }
+        })
+          .then((res) => res.json())
+          .then(setMessages);
+      };
+
     return (
         <MessageContext.Provider
             value={{
                 messages,
                 getMessages,
-                createMessages
+                createMessages,
+                getMyMessages
             }}
             > {props.children}
             </MessageContext.Provider>

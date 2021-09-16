@@ -29,7 +29,7 @@ export const QRFList = () => {
                         {/* This will link to messages */}
                         <button className="help_button" 
                         onClick={() => {
-                            history.push({ pathname: "/messages", })
+                            history.push({ pathname: "/messages" })
                         }}>Help</button>
 
                     </section>

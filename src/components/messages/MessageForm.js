@@ -43,12 +43,13 @@ export const MessageForm = () => {
                     onClick={evt => {
                         // Prevent form from being submitted
                         evt.preventDefault()
+                        let timestamp = Date.now()
 
                         const message = {
                             message: currentMessage.message,
                             battle_buddy: location.state.battleBuddyId,
                             help_section_post: location.state.helpSectionPostId,
-                            created_on_date: currentMessage.created_on_date
+                            created_on_date: timestamp
                         }
     
                         // Send POST request to your API

@@ -6,6 +6,7 @@ import "./Aside.css"
 export const Aside = () => {
     const history = useHistory()
 
+
     return (
         <aside class="menu">
   <p class="menu-label">
@@ -21,7 +22,10 @@ export const Aside = () => {
     Battle Buddy Section
   </p>
   <ul class="menu-list">
-      <button>Become A Battle Buddy</button>
+
+  <button onClick={() => {
+        
+      }}>Become A Battle Buddy</button>
       <div>Help someone in need</div>
   </ul>
 </aside>

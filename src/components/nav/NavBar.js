@@ -14,7 +14,7 @@ export const NavBar = () => {
         </Link>
       </li>
       <li className="navbar__item">
-      {localStorage.getItem("active") !== null ?(
+      {localStorage.getItem("active") !== null ? (
         <Link className="navbar__link" to="/QRF">
           QRF
         </Link>): "" }

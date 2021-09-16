@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { QRFContext } from "./QRFProvider";
 import "./QRFList.css"
+import { MessageContext } from "../messages/MessageProvider";
 
 export const QRFList = () => {
     const history = useHistory()
@@ -26,10 +27,14 @@ export const QRFList = () => {
                         <div className="qrfpost__phone_number"><strong>Phone Number:</strong> {qrfpost.phone_number}</div>
                         <div className="qrfpost__is_helped">{qrfpost.is_helped}</div> 
 
-                        {/* This will link to messages */}
+                        {/* This links to messages */}
                         <button className="help_button" 
                         onClick={() => {
-                            history.push({ pathname: "/messages" })
+                            history.push({ pathname: "/messages/new",
+                            state: {
+                                helpSectionPostId: qrfpost.content.id,}
+                                //KEYERROR: battle_buddy 
+                            })
                         }}>Help</button>
 
                     </section>

@@ -30,7 +30,7 @@ export const MessageForm = () => {
     return (
         <form className="messageForm">
             <fieldset>
-                <div classNAme="form-group">
+                <div className="form-group">
                     <label>Message</label>
                     <input type="text" name="message" required autoFocus className="form-control"
                         value={currentMessage.message}

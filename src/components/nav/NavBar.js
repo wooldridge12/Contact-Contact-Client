@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./NavBar.css";
 
 export const NavBar = () => {
   const history = useHistory();
+let storage
+
+  useEffect(() => {
+   storage = localStorage.getItem("active")
+  })
 
   return (
     <ul className="navbar">
@@ -14,7 +19,7 @@ export const NavBar = () => {
         </Link>
       </li>
       <li className="navbar__item">
-      {localStorage.getItem("active") !== null ? (
+      {storage ? (
         <Link className="navbar__link" to="/QRF">
           QRF
         </Link>): "" }

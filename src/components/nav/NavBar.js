@@ -1,14 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./NavBar.css";
 
 export const NavBar = () => {
   const history = useHistory();
-let storage
+   const [ storage, setStorage ] = useState()
 
   useEffect(() => {
-   storage = localStorage.getItem("active")
-  })
+    setStorage(JSON.parse(localStorage.getItem("active")))
+    // console.log(storage)
+  }, [])
 
   return (
     <ul className="navbar">
@@ -19,10 +20,7 @@ let storage
         </Link>
       </li>
       <li className="navbar__item">
-      {storage ? (
-        <Link className="navbar__link" to="/QRF">
-          QRF
-        </Link>): "" }
+              {storage ?  <Link className="navbar__link" to="/QRF"> QRF </Link>: "" }
       </li>
       <li className="navbar__item">
         <Link className="navbar__link" to="/messages">

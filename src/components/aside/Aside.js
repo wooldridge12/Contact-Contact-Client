@@ -6,7 +6,6 @@ import "./Aside.css"
 export const Aside = () => {
     const history = useHistory()
 
-
     return (
         <aside class="menu">
   <p class="menu-label">
@@ -23,11 +22,25 @@ export const Aside = () => {
   </p>
   <ul class="menu-list">
 
+
   <button onClick={() => {
-        
-      }}>Become A Battle Buddy</button>
-      <div>Help someone in need</div>
-  </ul>
+    return fetch("http://127.0.0.1:8000/battlebuddies", {
+      method: "POST",
+      headers: {
+        "Authorization": `Token ${localStorage.getItem("contact_user_id")}`,
+        "Content-type": "application/json"
+      },
+      body:JSON.stringify({
+
+      }),
+  })
+    .then((res) => res.json())
+    .then((res) => {
+      localStorage.setItem("active", res.active);
+    })
+  }
+} > Become A Battle Buddy</button>
+      <div> Help someone in need</div>
+</ul>
 </aside>
-    )
-}
+)}

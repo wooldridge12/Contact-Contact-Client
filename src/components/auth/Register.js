@@ -12,21 +12,10 @@ export const Register = (props) => {
   const passwordDialog = useRef();
   const history = useHistory();
 
-  // FOR WHEN WE SET UP OUR TUPLES
-  // const existingUserCheck = () => {
-  //     return fetch(`http://localhost:8088/users?email=${email.current.value}`)
-  //         .then(res => res.json())
-  //         .then(user => !!user.length)
-  // }
-
+  
   const handleRegister = (e) => {
     e.preventDefault();
     let timestamp = Date.now();
-
-    // LOGIC FOR WHEN WE HAVE OUR TUPLES SET
-    // existingUserCheck()
-    //     .then((userExists) => {
-    //         if (!userExists)
 
     if (password.current.value === verifyPassword.current.value) {
       const newUser = {

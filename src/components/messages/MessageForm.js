@@ -44,7 +44,7 @@ export const MessageForm = () => {
                         // Prevent form from being submitted
                         evt.preventDefault()
                         let timestamp = Date.now()
-
+                            // debugger
                         const message = {
                             message: currentMessage.message,
                             battle_buddy: location.state.battleBuddyId,

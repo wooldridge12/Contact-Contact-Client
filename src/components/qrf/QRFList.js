@@ -32,8 +32,9 @@ export const QRFList = () => {
                         onClick={() => {
                             history.push({ pathname: "/messages/new",
                             state: {
-                                helpSectionPostId: qrfpost.content.id,}
-                                //KEYERROR: battle_buddy 
+                                helpSectionPostId: qrfpost.id,
+                                battleBuddyId: qrfpost.contact_user.id}
+                                
                             })
                         }}>Help</button>
 

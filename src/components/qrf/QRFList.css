@@ -6,6 +6,7 @@
     border-radius: 6px;
     padding: 1rem;
     width: 75%;
+    font-size: larger;
 }
 .qrfpost__contact_user {
     font-weight: bold;
@@ -13,16 +14,18 @@
 .help_button {
     margin-left: 90%;
     height: 3rem;
-    width: 3rem;
     background-color: green;
     color: aliceblue;
     border-radius: 8px;
+    font-size: larger;
 }
 .help_button:hover {
     margin-left: 90%;
     height: 3rem;
-    width: 3rem;
     background-color: blue;
     color: aliceblue;
     border-radius: 8px;
+}
+.qrfpost__content {
+    margin: 1rem
 }

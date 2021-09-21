@@ -6,6 +6,7 @@
     border-radius: 6px;
     padding: 1rem;
     width: 75%;
+    font-size: larger;
 }
 .post__contact_user {
     font-weight: bold;
@@ -15,6 +16,7 @@
     height: 55px;
     border: black solid ;
     border-radius: 6px;
+    font-size: larger;
 }
 .create_post_btn:hover {
     border: blue solid 0.5rem;

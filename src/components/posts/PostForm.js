@@ -29,7 +29,7 @@ export const PostForm = () => {
                 </div>
             </fieldset>
             
-            <button type="submit" className="btn"
+            <button type="submit" className="btn form_post_btn"
                     onClick={evt => {
                         // Prevent form from being submitted
                         evt.preventDefault()

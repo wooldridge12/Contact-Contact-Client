@@ -39,7 +39,7 @@ export const MessageForm = () => {
                 </div>
             </fieldset>
 
-            <button type="submit" className="btn"
+            <button type="submit" className="btn msg_form_btn"
                     onClick={evt => {
                         // Prevent form from being submitted
                         evt.preventDefault()

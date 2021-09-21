@@ -23,7 +23,7 @@ export const QRFList = () => {
                     return <section key={`qrfposts--${qrfpost.id}`} className="qrfpost">
                         <div className="qrfpost__contact_user">{qrfpost.contact_user.user.first_name}</div>
                         <div className="qrfpost__urg_button"><strong>Urgency:</strong> {qrfpost.urg_button.label}</div>  
-                        <div className="qrfpost__content">{qrfpost.content}</div>
+                        <div className="qrfpost__content">- {qrfpost.content}</div>
                         <div className="qrfpost__phone_number"><strong>Phone Number:</strong> {qrfpost.phone_number}</div>
                         <div className="qrfpost__is_helped">{qrfpost.is_helped}</div> 
 

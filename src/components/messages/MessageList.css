@@ -15,4 +15,8 @@
     border-radius: 6px;
     padding: 1rem;
     width: 75%;
+    font-size: larger;
+}
+.msg-btn {
+    font-size: larger;
 }

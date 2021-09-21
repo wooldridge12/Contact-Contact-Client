@@ -18,3 +18,11 @@
     color: aliceblue;
     border-radius: 8px;
 }
+.help_button:hover {
+    margin-left: 90%;
+    height: 3rem;
+    width: 3rem;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 8px;
+}

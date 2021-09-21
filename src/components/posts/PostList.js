@@ -15,7 +15,7 @@ export const PostList = () => {
     <article className="posts">
         <header className="posts-header">
 
-        <button className="btn btn-2 btn-sep icon-create"
+        <button className="btn btn-2 btn-sep icon-create create_post_btn"
                 onClick={() => {
                     history.push({ pathname: "/posts/new" })
                 }}

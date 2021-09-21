@@ -4,8 +4,16 @@
     border-radius: 6px;
     padding: 1rem;
     width: 24%;
-    margin-top: 10%;
+    margin-top: 5%;
     position: fixed;
     right: 0%;
     background-color: aliceblue;
 } 
+.hs-btn:hover {
+    border: red solid;
+    border-radius: 4px;
+}
+.bb-btn:hover {
+    border: green solid;
+    border-radius: 4px;
+}

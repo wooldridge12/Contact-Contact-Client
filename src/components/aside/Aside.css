@@ -11,9 +11,9 @@
 } 
 .hs-btn:hover {
     border: red solid;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 .bb-btn:hover {
     border: green solid;
-    border-radius: 2px;
+    border-radius: 4px;
 }

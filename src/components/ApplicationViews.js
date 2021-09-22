@@ -8,6 +8,7 @@ import { MessageProvider } from "./messages/MessageProvider";
 import { MessageList } from "./messages/MessageList";
 import { HelpForm } from "./qrf/HelpForm";
 import { MessageForm } from "./messages/MessageForm";
+import "./AppViews.css"
 
 export const ApplicationViews = () => {
     return (

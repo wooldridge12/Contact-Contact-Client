@@ -12,12 +12,15 @@
     font-weight: bold;
 }
 .create_post_btn {
-    margin-left: 30%;
+    margin-left: 60%;
+    width: 15%;
     height: 55px;
     border: black solid ;
     border-radius: 6px;
-    font-size: larger;
+    font-size:x-large ;
 }
 .create_post_btn:hover {
-    border: blue solid 0.5rem;
+    border: goldenrod solid;
+    color: white;
+    background-color: black;
 }

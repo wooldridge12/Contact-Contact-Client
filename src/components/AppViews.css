@@ -1,4 +1,24 @@
-.title {
+.contact_main {
     color: black;
     margin-left: 5%;
+    font-weight: bolder;
+    font-size: xxx-large;
 }
+.contact_qrf {
+    color: black;
+    margin-left: 5%;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+.contact_messages {
+    color: black;
+    margin-left: 5%;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+/* .contact_help_form {
+    color: black;
+    margin-left: 5%;
+    font-weight: bolder;
+    font-size: xxx-large;
+} */

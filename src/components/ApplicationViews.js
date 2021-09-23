@@ -24,7 +24,7 @@ export const ApplicationViews = () => {
       <MessageProvider>
 
         <Route exact path="/">
-          <><div className="title">Contact-Contact</div></>
+          <><div className="contact_main">Contact-Contact</div></>
           <PostList />
         </Route>
         <Route exact path="/posts/new">
@@ -32,12 +32,12 @@ export const ApplicationViews = () => {
         </Route>
 
         <Route exact path="/QRF">
-        <><div className="title">QRF</div></>
+        <><div className="contact_qrf">Quick Reaction Force</div></>
           <QRFList />
         </Route>
 
         <Route exact path="/messages">
-        <><div className="title">MESSAGES</div></>
+        <><div className="contact_messages">MESSAGES</div></>
           <MessageList />
         </Route>
         <Route exact path="/messages/new">

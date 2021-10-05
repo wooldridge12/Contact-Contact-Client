@@ -5,7 +5,7 @@ import "./PostList.css"
 
 export const PostList = () => {
   const history = useHistory()
-  const { posts, getPosts, } = useContext(PostContext);
+  const { posts, getPosts, deletePosts } = useContext(PostContext);
 
   useEffect(() => {
     getPosts();
@@ -25,12 +25,19 @@ export const PostList = () => {
 
         {
             posts.map(post => {
-                return <section key={`post--${post.id}`} className="post">
+
+
+                return (<section key={`post--${post.id}`} className="post">
                     <div className="post__contact_user">{post.contact_user.user.first_name}</div>
                     <div className="post__post_content">{post.content}</div>
+
+                     {/* {(post.userId === parseInt(localStorage.getItem("contact_user_id"))) ? <button className="deletePostBtn" onClick={() => deletePosts(post.id)}>Delete</button> : <> </>}  */}
+                     <button className="deletePostBtn" onClick={() => deletePosts(post.id)}>Delete</button>  
                 </section>
-            })
+  )})
         }
     </article>
   );
 };
+
+

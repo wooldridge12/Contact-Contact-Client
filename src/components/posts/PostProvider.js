@@ -29,12 +29,33 @@ export const PostProvider = (props) => {
         .then(getPosts)
     }
 
+    const getPostById = (postId) => {
+        return fetch(`http://localhost:8000/posts/${postId}`, {
+          headers: {
+            "Authorization": `Token ${localStorage.getItem("contact_user_id")}`
+        }
+        }).then((res) => res.json());
+      }
+
+    const deletePosts = (postId) => {
+        return fetch(`http://localhost:8000/posts/${postId}`, {
+            method: "DELETE",
+            headers: {
+                "Authorization": `Token ${localStorage.getItem("contact_user_id")}`,
+                "Content-type": "application/json"
+            }
+        })
+        .then(getPosts)
+    }
+
     return (
         <PostContext.Provider
           value={{
               posts,
               getPosts,
-              createPosts
+              createPosts,
+              deletePosts,
+              getPostById
           }}
           >
               {props.children}

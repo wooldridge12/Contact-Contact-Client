@@ -40,7 +40,7 @@ export const Aside = () => {
     })
   }
 } > Become A Battle Buddy</button>
-      <div> Help someone in need, become a battle buddy. Do you have wisdom to pass to someone in need or feeling lost? perfect try to become a battle buddy. Suicide is often preventible. We survive combat zones with our battle buddies lets not stop now! We all struggle and survive to tell the tale. </div>
+      <div> Help someone in need, become a battle buddy. Do you have wisdom to pass to someone in need or feeling lost? perfect try to become a battle buddy. Suicide is often preventible. We survive combat zones with our battle buddies lets not stop now! We all struggle and survive to tell the tale. “Per researchers’ estimates, 30,177 Global War on Terror veterans have died by suicide, compared to 7,057 who have died while deployed in support of the Global War on Terror.” -MilitaryTimes  </div>
 </ul>
 </aside>
 )}
